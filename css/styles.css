@@ -412,6 +412,7 @@ ul {
   letter-spacing: 0.06em;
 }
 .work-text {
+  color: var(--basic-text-color);
   font-size: 16px;
   line-height: 1.88;
 }
