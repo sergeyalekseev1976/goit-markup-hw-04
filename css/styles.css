@@ -143,22 +143,16 @@ ul {
 .contacts-tel-icon {
   fill: currentColor;
 }
-.contacts-header .link:hover .contacts-mail-icon,
-.contacts-header .link:focus .contacts-mail-icon {
-  fill: var(--accent-color);
-}
-.contacts-header .link:hover .contacts-tel-icon,
-.contacts-header .link:focus .contacts-tel-icon {
-  fill: var(--accent-color);
-}
+
 .contacts-header .link:hover,
 .contacts-header .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
-/* main */
+/* ========= main ========= */
 
-/* hat */
+/* ========= hat ========= */
 .hat {
 }
 
@@ -305,8 +299,7 @@ ul {
   justify-content: center;
   column-gap: 10px;
 }
-.social-list-icon {
-}
+
 .social-list-link {
   display: flex;
   align-items: center;
@@ -314,17 +307,14 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* background-color: var(--basic-bg-color); */
+  background-color: var(--basic-bg-color);
   fill: var(--social-icon-color);
 }
 .social-list-link:hover,
 .social-list-link:focus {
-  fill: var(--accent-color);
+  background-color: var(--accent-color);
+  fill: var(--basic-bg-color);
 }
-/* .social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--white-text-color);
-} */
 
 /* ========== customers =========== */
 
@@ -343,18 +333,14 @@ ul {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--social-icon-color);
+  fill: var(--social-icon-color);
   border-radius: 4px;
 }
-.customers-link-icon {
-  fill: var(--social-icon-color);
-}
+
 .customers-link:hover,
 .customers-link:focus {
-  border: 1px solid var(--accent-bg-color);
-}
-.customers-link:hover .customers-link-icon,
-.customers-link:focus .customers-link-icon {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-bg-color);
 }
 
 /*============= portfolio ===========*/
@@ -394,7 +380,6 @@ ul {
 }
 .work .item {
   width: 370px;
-  border-bottom: 1px solid var(--border-box-color);
 }
 .work-link:hover,
 .work-link:focus {
@@ -402,6 +387,9 @@ ul {
 }
 .description {
   padding: 20px 24px;
+  border-right: 1px solid var(--border-box-color);
+  border-bottom: 1px solid var(--border-box-color);
+  border-left: 1px solid var(--border-box-color);
 }
 .work-title {
   margin-bottom: 4px;
@@ -479,10 +467,9 @@ ul {
   height: 44px;
   border-radius: 50%;
   background: var(--link-icon-footer-color);
-}
-.social-icon-footer {
   fill: var(--white-text-color);
 }
+
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: var(--accent-color);
